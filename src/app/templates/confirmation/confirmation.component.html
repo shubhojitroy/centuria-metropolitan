@@ -20,15 +20,18 @@
               you are not acting as a nominee for, or otherwise for the account or benefit of, any Ineligible Persons.
             </li>
           </ol>
-
-          <div>
-            <button type="button" class="btn btn-primary" [routerLink]="['/home']"><!---->
-              Exit <i class="fas fa-times-circle"></i>
-            </button>
-            <span>&nbsp;</span>
-            <button type="button" class="btn btn-primary" ><!--[routerLink]="['/letter']"-->
-              Proceed <i class="fas fa-check"></i>
-            </button>
+          <hr>
+          <div class="flex-row">
+            <div class="p-2 float-sm-left">
+              <button type="button" class="btn btn-primary" [routerLink]="['/']">
+                Exit <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="p-2 float-sm-right">
+              <button type="button" class="btn btn-primary" ><!--[routerLink]="['/letter']"-->
+                Proceed <i class="fas fa-check"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
