@@ -37,7 +37,7 @@ import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
     FooterComponent,
     ContactComponent,
     PrivacypolicyComponent,
-    OverviewComponent,    
+    OverviewComponent,
     DatesComponent,
     CtcdetailsComponent,
   ],
