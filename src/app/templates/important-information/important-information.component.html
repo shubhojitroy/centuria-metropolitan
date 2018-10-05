@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">{{ cardLabel }}</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            The documents on these webpages relate to an entitlement offer of new units by Centuria Metropolitan REIT (ARSN 124 364 718) and:
+          </p>
+          <ul class="card-text">
+            <li>
+              have been prepared to comply with the requirements of the securities laws of Australia; and
+            </li>
+            <li>
+              are for use only by residents of Australia and New Zealand from within Australia or New Zealand.
+            </li>
+          </ul>
+          <p class="card-text">
+            They must not be released or distributed in the United States, or in any jurisdiction outside of Australia and New Zealand where distribution may be restricted by law.<br><br>
+            The documents on these webpages do not constitute an offer of securities in the United States or to any person to whom it would not be lawful outside Australia or New Zealand. The securities referred to herein have not been and will not be registered under the U.S. Securities Act of 1933 (the "<strong>Securities Act</strong>") or under the securities laws of any state or other jurisdiction of the United States. Any securities described in, or sold pursuant to, these documents may not be offered or sold in the United States absent registration under the Securities Act or pursuant to an applicable exemption from registration, or to any person to whom it would not be lawful outside Australia or New Zealand.
+          </p>
+          <p class="card-text">
+            By clicking the '<strong>I CONFIRM</strong>' button below and accessing the documents on these webpages, you represent, warrant and agree that:
+          </p>
+          <ol>
+            <li>
+              you have read, understood and agree to the terms contained in this notice;
+            </li>
+            <li>
+              you are a resident of Australia or New Zealand accessing these webpages from Australia or New Zealand;
+            </li>
+            <li>
+              you are not in the United States and you are not acting for the account or benefit of a person in the United States; and
+            </li>
+            <li>
+              you will not release or distribute a copy of these documents in the United States or in any other place in which, or to any other person to whom, it is unlawful to do so.
+            </li>
+          </ol>
+          <div>
+            <tabset>
+              <tab heading = "overview" id="tab1">
+                <cmo-overview></cmo-overview>
+              </tab>              
+              <tab heading = "dates">
+                <cmo-dates></cmo-dates>
+              </tab>
+              <tab heading = "details">
+                <cmo-ctcdetails></cmo-ctcdetails>
+              </tab>              
+            </tabset>
+          </div>
+          <div class="flex-row">
+            <div class="p-2 float-sm-left">
+              <button type="button" class="btn btn-primary" [routerLink]="['/']">
+                Exit <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="p-2 float-sm-right">
+              <button type="button" class="btn btn-primary" (click)="onSubmit()" [routerLink]="['/login']">
+                Next <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
