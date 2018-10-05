@@ -38,29 +38,32 @@
               you will not release or distribute a copy of these documents in the United States or in any other place in which, or to any other person to whom, it is unlawful to do so.
             </li>
           </ol>
+          <p class="card-text">
+            Otherwise, click the '<strong>EXIT</strong>' button below
+          </p>
           <div>
             <tabset>
-              <tab heading = "overview" id="tab1">
+              <tab heading = "OVERVIEW" id="tab1">
                 <cmo-overview></cmo-overview>
-              </tab>              
-              <tab heading = "dates">
+              </tab>
+              <tab heading = "DATES">
                 <cmo-dates></cmo-dates>
               </tab>
-              <tab heading = "details">
+              <tab heading = "CONTACT">
                 <cmo-ctcdetails></cmo-ctcdetails>
-              </tab>              
+              </tab>
             </tabset>
-          </div>
-          <div class="flex-row">
-            <div class="p-2 float-sm-left">
-              <button type="button" class="btn btn-primary" [routerLink]="['/']">
-                Exit <i class="fas fa-times-circle"></i>
-              </button>
-            </div>
-            <div class="p-2 float-sm-right">
-              <button type="button" class="btn btn-primary" (click)="onSubmit()" [routerLink]="['/login']">
-                Next <i class="fas fa-arrow-circle-right"></i>
-              </button>
+            <div class="flex-row">
+              <div class="p-2 float-sm-left">
+                <button type="button" class="btn btn-primary" [routerLink]="['/']">
+                  Exit <i class="fas fa-times-circle"></i>
+                </button>
+              </div>
+              <div class="p-2 float-sm-right">
+                <button type="button" class="btn btn-primary" (click)="onSubmit()" [routerLink]="['/login']">
+                  I Confirm <i class="fas fa-arrow-circle-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ export class EligibilityNoticeComponent implements OnInit {
   ngOnInit() {
   }
   onBack(): void {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/']);
   }
 
 }
