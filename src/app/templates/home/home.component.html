@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">{{ pageTitle }}</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Centuria Metropolitan REIT (ASX: CMA) offers investors a chance to invest in commercial property via a listed property trust. CMA is Australia’s largest ASX-listed metropolitan office REIT (A-REIT) and is included in the S&P/ASX 300 Index. CMA owns a portfolio of 19 high quality metropolitan assets with a total value of $930.5 million. These properties are located in key metropolitan areas around Australia, including Sydney, Melbourne, Brisbane, Canberra, Perth and Adelaide.<br><br>
+            <span class="font-weight-bold">CMA Investment Objectives</span><br><br>
+            CMA owns a portfolio of quality metropolitan real estate assets delivering stable and predictable rental income with opportunities for value uplift through diligent asset management and repositioning strategies.<br><br>
+            The portfolio is well positioned to provide investors predictability and stability of income through strong portfolio occupancy and weighted average lease expiry profile. Distributions to securityholders are paid quarterly.
+          </p>
+          <form [formGroup]="countryform" novalidate (ngSubmit)="onSubmit()">
+            <div class="form-group" [ngClass]="{
+              'has-success': country.valid && (country.dirty || country.touched),
+              'has-danger': country.invalid && (country.dirty || country.touched)}">
+              <!-- <label for="country">Select Country</label> -->
+              <label for="country">
+                <h5 class="card-title">{{ cardLabel }}</h5>
+              </label>
+              <select class="form-control" id="" aria-describedby="textHelp" placeholder="Choose your country of residence" formControlName="country">
+                <option value="">Choose your country of residence</option>
+                <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+              </select>
+              <div class="form-control-feedback" *ngIf="country.errors && (country.dirty || country.touched)">
+                <p *ngIf="country.errors.required">Country is required</p>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary"><!--(click)="onSubmit()" [routerLink]="['/prospectus']"-->
+              Submit <i class="fas fa-share-square"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

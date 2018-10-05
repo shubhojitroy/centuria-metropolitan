@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">{{ pageTitle }}</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            By proceeding you confirm that you are a resident of Australia or New Zealand accessing these webpages from within Australia or New Zealand and you represent, warrant and agree that:
+          </p>
+          <ol class="card-text">
+            <li>
+                you are not in the United States and you are not acting for the account or benefit of a person in the United States;
+            </li>
+            <li>
+              you will not make a copy of the documents on these webpages available to, or release or distribute a copy of such documents to any person in the United States or in any other place in which, or to any other person to whom, it would be unlawful to do so ("<strong>Ineligible Persons</strong>");
+            </li>
+            <li>
+              you are not acting as a nominee for, or otherwise for the account or benefit of, any Ineligible Persons.
+            </li>
+          </ol>
+
+          <div>
+            <button type="button" class="btn btn-primary" [routerLink]="['/home']"><!---->
+              Exit <i class="fas fa-times-circle"></i>
+            </button>
+            <span>&nbsp;</span>
+            <button type="button" class="btn btn-primary" ><!--[routerLink]="['/letter']"-->
+              Proceed <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

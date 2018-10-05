@@ -1,0 +1,67 @@
+<footer class="footer">
+  <div class="container">
+    <div class="flex-row">
+      <div class="p-2 float-sm-left">
+        &copy; 2018 Boardroomlimited pty limited.  |  <button type="button" class="btn btn-link" (click)="openModal(templatePP)">privacypolicy</button>
+      </div>
+      <div class="p-2 float-sm-right">
+        <button type="button" class="btn btn-link" (click)="openModal(template)">contact</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Share Registry</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <p class="font-weight-bold">For shareholding enquiries of Centuria Metropolitan REIT (ASX: CMA) please contact:</p>
+
+      <p class="font-weight-normal">BoardRoom Pty Limited Level 12, 225 George Street Sydney NSW 2000</p>
+
+      <p class="font-weight-bold">Postal Address</p>
+      <p class="font-weight-normal">GPO Box 3993 Sydney NSW 2001</p>
+
+      <p class="font-weight-bold">Contact</p>
+      <p class="font-weight-normal">
+        Within Australia: 1800 182 257<br>
+        Outside Australia: +612 9290 9689
+      </p>
+      <p class="font-weight-bold">Email</p>
+      <p class="font-weight-normal">
+      E: <a href="mailto:corporateactions@boardroomlimited.com.au">corporateactions@boardroomlimited.com.au</a><br>
+
+      </p>
+  </div>
+</ng-template>
+
+<ng-template #templatePP>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Privacy Policy</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p class="font-weight-bold">Introduction</p>
+    <p class="font-weight-normal">
+      Boardroom Pty Limited (ABN 14 003 209 836) ("BoardRoom", "we" or "us") provides a comprehensive range of services to listed and unlisted entities, and to public, private and member-based organisations. As part of this, we collect information from and about you. This information is essential for us to deliver our services; if you choose not to provide it, we will not be able to provide our services to you.
+    </p>
+
+    <p class="font-weight-normal">
+      As required by law, we comply with the Australian Privacy Principles contained in the Privacy Act 1988 (Cth). This Privacy Policy outlines how BoardRoom collects, manages, uses and safeguards your personal information. Protecting personal information provided to us is important and integral to our business philosophy and ethics.
+    </p>
+
+    <p class="font-weight-normal">
+      By accessing the BoardRoom website (<a href="http://www.boardroomlimited.com.au" target="_blank">boardroomlimited.com.au</a>), or by using our services, you are agreeing to be bound by the terms of this policy and by the Terms of Use.
+    </p>
+
+    <p class="font-weight-normal">
+      We may amend this Privacy Policy from time to time in order to take account of changes to legislation, or if we make changes to any of our practices that affect how we collect and store information.
+    </p>
+  </div>
+</ng-template>

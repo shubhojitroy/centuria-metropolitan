@@ -1,0 +1,25 @@
+.btn-primary {
+    background-color:#ffffff;
+    border-radius: .2233rem;
+    padding: .8em 1.9em;
+    text-align: center;
+    color: #333;
+    border: 1.6px solid #f4c168;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+
+    &:hover, &:visited {
+        background-color:#f4c168;
+        color:#ffffff;
+        border: 1px solid #ffffff;
+    }
+}
+
+.btn-link {
+  color:#333 !important;
+  text-decoration:none;
+  &:hover {
+    text-decoration:underline;
+  }
+}
