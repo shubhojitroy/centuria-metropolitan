@@ -53,17 +53,17 @@
                 <cmo-ctcdetails></cmo-ctcdetails>
               </tab>
             </tabset>
-            <div class="flex-row">
-              <div class="p-2 float-sm-left">
-                <button type="button" class="btn btn-primary" [routerLink]="['/']">
-                  Exit <i class="fas fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="p-2 float-sm-right">
-                <button type="button" class="btn btn-primary" (click)="onSubmit()" [routerLink]="['/login']">
-                  I Confirm <i class="fas fa-arrow-circle-right"></i>
-                </button>
-              </div>
+          </div>
+          <div class="flex-row">
+            <div class="p-2 float-sm-left">
+              <button type="button" class="btn btn-primary" [routerLink]="['/']">
+                Exit <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="p-2 float-sm-right">
+              <button type="button" class="btn btn-primary" (click)="onSubmit()">
+                I Confirm <i class="fas fa-arrow-circle-right"></i>
+              </button>
             </div>
           </div>
         </div>
