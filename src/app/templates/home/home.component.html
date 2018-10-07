@@ -16,7 +16,6 @@
             <div class="form-group" [ngClass]="{
               'has-success': country.valid && (country.dirty || country.touched),
               'has-danger': country.invalid && (country.dirty || country.touched)}">
-              <!-- <label for="country">Select Country</label> -->
               <label for="country">
                 <h5 class="card-title">{{ cardLabel }}</h5>
               </label>
@@ -28,7 +27,7 @@
                 <p *ngIf="country.errors.required">Country is required</p>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary"><!--(click)="onSubmit()" [routerLink]="['/prospectus']"-->
+            <button type="submit" class="btn btn-primary">
               Submit <i class="fas fa-share-square"></i>
             </button>
           </form>

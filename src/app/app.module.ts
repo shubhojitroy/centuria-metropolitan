@@ -9,6 +9,7 @@ import { HomeComponent } from './templates/home/home.component';
 import { ConfirmationComponent } from './templates/confirmation/confirmation.component';
 import { EligibilityNoticeComponent } from './templates/eligibility-notice/eligibility-notice.component';
 import { ImportantInformationComponent } from './templates/important-information/important-information.component';
+import { OfferOverviewComponent } from './templates/offer-overview/offer-overview.component';
 
 import { HeaderComponent } from './childtemplates/header/header.component';
 import { FooterComponent } from './childtemplates/footer/footer.component';
@@ -23,7 +24,7 @@ import { OverviewComponent } from './tabs/overview/overview.component';
 
 import { DatesComponent } from './tabs/dates/dates.component';
 import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
-
+import { ProspectusComponent } from './tabs/prospectus/prospectus.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
     ConfirmationComponent,
     EligibilityNoticeComponent,
     ImportantInformationComponent,
+    OfferOverviewComponent,
     HeaderComponent,
     FooterComponent,
     ContactComponent,
@@ -40,6 +42,7 @@ import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
     OverviewComponent,
     DatesComponent,
     CtcdetailsComponent,
+    ProspectusComponent
   ],
   imports: [
     BrowserModule,

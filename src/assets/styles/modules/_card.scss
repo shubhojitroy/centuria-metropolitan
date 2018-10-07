@@ -5,3 +5,8 @@
 .card-title {
   margin-bottom: $card-margin-bottom;
 }
+.border-danger {
+  border: .01rem solid $danger-border !important;
+  background-color: $danger-background;
+  padding: 1rem;
+}

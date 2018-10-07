@@ -15,6 +15,6 @@ export class ImportantInformationComponent implements OnInit {
   }
 
   onSubmit() {
-    this.router.navigate(['/']);
+    this.router.navigate(['/offer-overview']);
   }
 }
