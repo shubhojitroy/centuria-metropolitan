@@ -17,15 +17,10 @@ import { FooterComponent } from './childtemplates/footer/footer.component';
 import { TabsModule } from 'ngx-bootstrap';
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 
-import { ContactComponent } from './modals/contact/contact.component';
-import { PrivacypolicyComponent } from './modals/privacypolicy/privacypolicy.component';
-
 import { OverviewComponent } from './tabs/overview/overview.component';
-
 import { DatesComponent } from './tabs/dates/dates.component';
-import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
 import { ProspectusComponent } from './tabs/prospectus/prospectus.component';
-
+import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +32,10 @@ import { ProspectusComponent } from './tabs/prospectus/prospectus.component';
     OfferOverviewComponent,
     HeaderComponent,
     FooterComponent,
-    ContactComponent,
-    PrivacypolicyComponent,
     OverviewComponent,
     DatesComponent,
+    ProspectusComponent,
     CtcdetailsComponent,
-    ProspectusComponent
   ],
   imports: [
     BrowserModule,
