@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CountryService } from 'src/app/services/shared/country.service';
+import { CountryService } from '../../services/shared/country.service';
 
 @Component({
   selector: 'cmo-home',
