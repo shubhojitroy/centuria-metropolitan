@@ -25,6 +25,8 @@ import { DatesComponent } from './tabs/dates/dates.component';
 import { ProspectusComponent } from './tabs/prospectus/prospectus.component';
 import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
 
+import { CountryService} from './services/shared/country.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,7 @@ import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
     TabsModule.forRoot(),
     ModalModule.forRoot(),
   ],
-  providers: [BsModalService],
+  providers: [BsModalService, CountryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
