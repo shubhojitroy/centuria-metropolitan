@@ -9,7 +9,7 @@
     font-size: 18px;
     margin-top: 10px;
 
-    &:hover, &:visited, &:active, &:focus {
+    &:hover, &:visited, &:active, &:focus, &:focus-within {
         background-color:#f4c168;
         color:#ffffff;
         border: 1px solid #ffffff;
