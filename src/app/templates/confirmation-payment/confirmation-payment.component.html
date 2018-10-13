@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
       <div class="col-sm">
-        <div class="card">
+        <div class="card" id="print-section">
           <div class="card-header">
             <h5 class="card-title">{{ pageTitle }}</h5>
           </div>
@@ -9,12 +9,18 @@
             <p class="card-text">
 
             </p>
-
-
-
-            <button type="submit" class="btn btn-primary" (click)="onFinish()">
-              Finish&nbsp;<i class="fas fa-share-square"></i>
-            </button>
+            <div class="flex-row">
+              <div class="p-2 float-sm-left">
+                <button class="btn btn-primary" (click)="print()" flex start>
+                  <i class="material-icons">local_printshop</i>&nbsp;PRINT
+                </button>
+              </div>
+              <div class="p-2 float-sm-right">
+                <button type="submit" class="btn btn-primary" (click)="onFinish()">
+                  Finish&nbsp;<i class="fas fa-share-square"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
