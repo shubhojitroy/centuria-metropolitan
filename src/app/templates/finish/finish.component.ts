@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'cmo-finish',
   templateUrl: './finish.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinishComponent implements OnInit {
 
-  constructor() { }
+  pageTitle = 'Acknowledgement';
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onReturn() {
+    this.router.navigate(['/home']);
   }
 
 }

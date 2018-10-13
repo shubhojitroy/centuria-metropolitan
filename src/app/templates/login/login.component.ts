@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   createForm() {
     this.loginform = new FormGroup ({
-      country: this.login
+      login: this.login
     });
   }
 

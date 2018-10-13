@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'cmo-confirmation-payment',
   templateUrl: './confirmation-payment.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfirmationPaymentComponent implements OnInit {
 
-  constructor() { }
+  pageTitle = 'Confirmation for Application Registration';
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onFinish() {
+    this.router.navigate(['/finish']);
   }
 
 }

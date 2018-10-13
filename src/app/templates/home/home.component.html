@@ -24,7 +24,7 @@
                 <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
               </select>
               <div class="form-control-feedback" *ngIf="country.errors && (country.dirty || country.touched)">
-                <p *ngIf="country.errors.required">Country is required</p>
+                <!-- <p *ngIf="country.errors.required">Country is required</p> -->
               </div>
             </div>
             <button type="submit" class="btn btn-primary">
