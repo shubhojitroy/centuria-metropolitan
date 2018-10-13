@@ -6,15 +6,35 @@
           <h5 class="card-title">{{ pageTitle }}</h5>
         </div>
         <div class="card-body">
-          <p class="card-text">
-
-          </p>
           <form [formGroup]="loginform" novalidate (ngSubmit)="onLogin()">
-
-
-            <button type="submit" class="btn btn-primary">
-              Login <i class="fas fa-share-square"></i>
-            </button>
+            <div class="card-text">
+              <h5 class="card-title">Sign in</h5>
+              <div class="form-group">
+                <label for="investorId">HIN/SRN</label>
+                <input type="text" class="form-control" id="investorId" aria-describedby="emailHelp" placeholder="Enter Investor ID">
+                <small id="textHelp" class="form-text text-muted">eg: for HIN: "X123456789" or for SRN: "I12345678901"</small>
+              </div>
+              <div class="form-group">
+                <label for="investorName">Surname/Company Name</label>
+                <input type="text" class="form-control" id="investorName" placeholder="Surname/Company Name">
+              </div>
+              <div class="alert alert-primary" role="alert">
+                If you have any questions about the Retail Entitlement Offer, you should consult your stockbroker, solicitor, accountant or other professional adviser. You can also contact the Centuria Metropolitan REIT Investor Relations Line on  1800 182 257 (within Australia) or +612 9290 2689 (outside Australia) at any time from 9.00am to 5.00pm (Sydney time) Monday to Friday, during the the period of the Retail Entitlement Offer.
+              </div>
+              <hr>
+              <div class="flex-row">
+                <div class="p-2 float-sm-left">
+                  <button type="button" class="btn btn-primary" [routerLink]="['/']">
+                    Exit <i class="fas fa-times-circle"></i>
+                  </button>
+                </div>
+                <div class="p-2 float-sm-right">
+                  <button type="submit" class="btn btn-primary">
+                    Login <i class="fas fa-share-square"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
