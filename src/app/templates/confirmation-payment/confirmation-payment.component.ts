@@ -28,6 +28,11 @@ export class ConfirmationPaymentComponent implements OnInit {
           <title>Print tab</title>
           <style>
           //........Customized style.......
+          body {
+            margin:0;
+            padding:0;
+            line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000;
+          }
           </style>
         </head>
         <body onload="window.print();window.close()">${ printContents }</body>
