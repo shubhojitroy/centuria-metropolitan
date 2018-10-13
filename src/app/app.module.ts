@@ -17,6 +17,7 @@ import { FooterComponent } from './childtemplates/footer/footer.component';
 import { TabsModule } from 'ngx-bootstrap';
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 import { CountryService} from './services/shared/country.service';
+import { InvestorService} from './services/shared/investor.service';
 
 import { ContactComponent } from './modals/contact/contact.component';
 import { PrivacypolicyComponent } from './modals/privacypolicy/privacypolicy.component';
@@ -61,7 +62,7 @@ import { FinishComponent } from './templates/finish/finish.component';
     TabsModule.forRoot(),
     ModalModule.forRoot(),
   ],
-  providers: [BsModalService, CountryService],
+  providers: [BsModalService, CountryService, InvestorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
