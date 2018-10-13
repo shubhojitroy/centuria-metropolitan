@@ -6,31 +6,34 @@
           <h5 class="card-title">{{ pageTitle }}</h5>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Details as in the registry</h5>
-          <div class="card-text">
-            <div class="flex-row">
-              <div class="p-2 float-sm-left">
-                <span class="font-weight-bold">Holder Details:</span>
+          <div class="alert alert-light border" role="alert">
+            <h5 class="card-title">Details as in the registry</h5>
+            <div class="card-text">
+              <div class="flex-row">
+                <div class="p-2 float-sm-left">
+                  <span class="font-weight-bold">Holder Details:</span>
+                </div>
+                <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
+                  {{ investor?.Address1 }}<br>
+                  {{ investor?.Address2 }}<br>
+                  {{ investor?.Address3 }}<br>
+                  {{ investor?.Address4 }}<br>
+                  {{ investor?.Address5 }}<br>
+                  {{ investor?.Address6 }}
+                </div>
               </div>
-              <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
-                {{ investor?.Address1 }}<br>
-                {{ investor?.Address2 }}<br>
-                {{ investor?.Address3 }}<br>
-                {{ investor?.Address4 }}<br>
-                {{ investor?.Address5 }}<br>
-                {{ investor?.Address6 }}
+              <div class="clearfix"></div>
+              <div class="flex-row">
+                  <div class="p-2 float-sm-left">
+                    <span class="font-weight-bold">Entitlement to New Units:</span>
+                  </div>
+                  <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
+                    {{ investor?.AvailableShares }}
+                  </div>
               </div>
+              <div class="clearfix"></div>
+            </div>
           </div>
-          <div class="clearfix"></div>
-          <div class="flex-row">
-              <div class="p-2 float-sm-left">
-                <span class="font-weight-bold">Entitlement to New Units:</span>
-              </div>
-              <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
-                {{ investor?.AvailableShares }}
-              </div>
-          </div>
-          <div class="clearfix"></div>
           <div class="alert alert-primary" role="alert">
             If you have any questions about the Retail Entitlement Offer, you should consult your stockbroker, solicitor, accountant or other professional adviser. You can also contact the Centuria Metropolitan REIT Investor Relations Line on  1800 182 257 (within Australia) or +612 9290 2689 (outside Australia) at any time from 9.00am to 5.00pm (Sydney time) Monday to Friday, during the the period of the Retail Entitlement Offer.
           </div>

@@ -11,6 +11,58 @@
             Your Application Monies must be received by the Registry by BPAY&#174; by 5.00pm (Sydney time) on Monday, 22 October 2018 for participation in the early retail close, or by 5:00pm (Sydney time) on Monday 29 October 2018 for the retail close. If you do not make a BPAY&#174; payment, your online Application will be incomplete and will not be accepted. By paying by BPAY&#174;, you will be deemed to have completed a Retail Offer Entitlement and Acceptance Form for the value of New Units the subject of your Application.<br><br>
             <b>You should submit your BPAY&#174; payment immediately using the Biller Code and Reference provided below</b>. The time of your Application will be the time at which the Registry has received both your valid online Application and your BPAY&#174; payment. If you submit an online Application in the 24 hours before 5.00pm (Sydney time) on Monday, 14 December 2015 you must ensure that your BPAY&#174; payment is processed by your bank so that your Application Monies are received before 5.00pm (Sydney time) on Monday, 14 December 2015. If your BPAY&#174; payment is not received by this time, it will be treated as a late Application and may not be processed.
           </p>
+          <div class="alert alert-light border" role="alert">
+            <h6 class="card-title">Details of the Applicant</h6>
+            <div class="flex-row">
+              <div class="p-2 float-sm-left">
+                <span class="font-weight-bold">Holder Details:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
+                {{ investor?.Address1 }}<br>
+                {{ investor?.Address2 }}<br>
+                {{ investor?.Address3 }}<br>
+                {{ investor?.Address4 }}<br>
+                {{ investor?.Address5 }}<br>
+                {{ investor?.Address6 }}
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <h6 class="card-title">Application Monies Payable:</h6>
+            <div class="flex-row">
+              <div class="p-2 float-sm-left">
+                <span class="font-weight-bold">Entitlement to New Units:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
+                {{ investor?.AvailableShares }}
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <h6 class="card-title">Payment References:</h6>
+            <div class="flex-row">
+              <div class="p-2 float-sm-left">
+                <span class="font-weight-bold">Biller Code:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
+                {{ investor?.BillerCode }}
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="flex-row">
+              <div class="p-2 float-sm-left">
+                <span class="font-weight-bold">Ref:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="p-2 float-sm-right" >
+                {{ investor?.Crn }}
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <p class="card-text">
+              Telephone & Internet Banking - BPAY&#174;<br>
+              Contact your bank or financial institution to make this payment from your cheque, savings, debit or transaction account. More info: <a href="http://www.bpay.com.au" target="_blank">www.bpay.com.au</a>
+            </p>
+          </div>
+
           <div class="alert alert-primary" role="alert">
             <strong>Your Application Monies must be received by the Registry by BPAY&#174; by 5.00pm (Sydney time) on Monday, 22 October 2018 for participation in the early retail close, or by 5:00pm (Sydney time) on Monday 29 October 2018 for the retail close.</strong><hr>
             You should check the processing cut-off time for BPAY&#174; transactions with your bank, credit union or building society to ensure your payment will be received by the Registry in time.
