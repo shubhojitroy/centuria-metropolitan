@@ -6,15 +6,26 @@
           <h5 class="card-title">{{ pageTitle }}</h5>
         </div>
         <div class="card-body">
+          <h5 class="card-title">Details as in the registry</h5>
           <p class="card-text">
 
           </p>
-
-
-
-          <button type="submit" class="btn btn-primary" (click)="onAgree()">
-            Agree&nbsp;<i class="fas fa-share-square"></i>
-          </button>
+          <div class="alert alert-primary" role="alert">
+            If you have any questions about the Retail Entitlement Offer, you should consult your stockbroker, solicitor, accountant or other professional adviser. You can also contact the Centuria Metropolitan REIT Investor Relations Line on  1800 182 257 (within Australia) or +612 9290 2689 (outside Australia) at any time from 9.00am to 5.00pm (Sydney time) Monday to Friday, during the the period of the Retail Entitlement Offer.
+          </div>
+          <hr>
+          <div class="flex-row">
+            <div class="p-2 float-sm-left">
+              <button type="button" class="btn btn-primary" [routerLink]="['/']">
+                Exit <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+            <div class="p-2 float-sm-right">
+              <button type="submit" class="btn btn-primary" (click)="onAgree()">
+                Agree&nbsp;<i class="fas fa-share-square"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

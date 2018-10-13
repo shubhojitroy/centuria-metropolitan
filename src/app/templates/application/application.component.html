@@ -6,15 +6,28 @@
           <h5 class="card-title">{{ pageTitle }}</h5>
         </div>
         <div class="card-body">
+          <h5 class="card-title">Application Amount</h5>
           <p class="card-text">
-
+            As an Eligible Retail Unitholder you are entitled to acquire 1 New Unit for every 3 existing fully paid Units held on the record date, being 7.00pm (Sydney time) on Friday, 12 October 2018 (<strong>Entitlements</strong>), at an Offer Price of AU$2.43 per New Unit outlined below.<br><br>
+            If you are in doubt as to how to deal with this online Application, please contact your accountant, solicitor, stockbroker or other personal adviser without delay. The Offer Information Booklet contains information relevant to a decision to invest in New Units and you should read the entire Offer Information Booklet carefully before applying for New Units. Defined terms in the Offer Information Booklet have the same meaning as in this online Application.
           </p>
           <form [formGroup]="applicationform" novalidate (ngSubmit)="onSubmit()">
-
-
-            <button type="submit" class="btn btn-primary">
-              Submit <i class="fas fa-share-square"></i>
-            </button>
+            <div class="alert alert-primary" role="alert">
+              If you have any questions about the Retail Entitlement Offer, you should consult your stockbroker, solicitor, accountant or other professional adviser. You can also contact the Centuria Metropolitan REIT Investor Relations Line on  1800 182 257 (within Australia) or +612 9290 2689 (outside Australia) at any time from 9.00am to 5.00pm (Sydney time) Monday to Friday, during the the period of the Retail Entitlement Offer.
+            </div>
+            <hr>
+            <div class="flex-row">
+              <div class="p-2 float-sm-left">
+                <button type="button" class="btn btn-primary" [routerLink]="['/registration-details']">
+                  <i class="fas fa-arrow-circle-left"></i>&nbsp;Previous
+                </button>
+              </div>
+              <div class="p-2 float-sm-right">
+                <button type="submit" class="btn btn-primary">
+                    Submit <i class="fas fa-share-square"></i>
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>

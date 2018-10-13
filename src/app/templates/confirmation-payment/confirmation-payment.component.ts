@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class ConfirmationPaymentComponent implements OnInit {
 
-  pageTitle = 'Confirmation for Application Registration';
+  pageTitle = 'Confirmation of Application Registration';
   constructor(private router: Router) { }
 
   ngOnInit() {
