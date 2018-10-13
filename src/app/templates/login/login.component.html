@@ -1,3 +1,23 @@
-<p>
-  login works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">{{ pageTitle }}</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+
+          </p>
+          <form [formGroup]="loginform" novalidate (ngSubmit)="onLogin()">
+
+
+            <button type="submit" class="btn btn-primary">
+              Login <i class="fas fa-share-square"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

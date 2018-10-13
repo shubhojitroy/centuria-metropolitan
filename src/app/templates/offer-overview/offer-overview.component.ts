@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'cmo-offer-overview',
@@ -8,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class OfferOverviewComponent implements OnInit {
 
   pageTitle = 'Entitlement features';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
   onSubmit() {
-
+    this.router.navigate(['/login']);
   }
 
 }
