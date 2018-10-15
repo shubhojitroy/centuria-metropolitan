@@ -29,23 +29,23 @@
             <div class="clearfix"></div> -->
 
             <div class="media">
+              <div class="col-sm">
+                <span class="font-weight-bold">Holder Details:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="media-body">
                 <div class="col-sm">
-                  <span class="font-weight-bold">Holder Details:</span>
-                </div>
-                <div *ngFor="let investor of investors" class="media-body">
-                  <div class="col-sm">
-                    {{ investor?.Address1 }}<br>
-                    {{ investor?.Address2 }}<br>
-                    {{ investor?.Address3 }}<br>
-                    {{ investor?.Address4 }}<br>
-                    {{ investor?.Address5 }}<br>
-                    {{ investor?.Address6 }}
-                  </div>
+                  {{ investor?.Address1 }}<br>
+                  {{ investor?.Address2 }}<br>
+                  {{ investor?.Address3 }}<br>
+                  {{ investor?.Address4 }}<br>
+                  {{ investor?.Address5 }}<br>
+                  {{ investor?.Address6 }}
                 </div>
               </div>
+            </div>
 
             <h6 class="card-title">Application Monies Payable:</h6>
-            <div class="flex-row">
+            <!-- <div class="flex-row">
               <div class="p-2 float-sm-left">
                 <span class="font-weight-bold">Entitlement to New Units:</span>
               </div>
@@ -53,9 +53,21 @@
                 {{ investor?.AvailableShares }}
               </div>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix"></div> -->
+
+            <div class="media">
+              <div class="col-sm">
+                <span class="font-weight-bold">Entitlement to New Units:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="media-body">
+                <div class="col-sm">
+                  {{ investor?.AvailableShares }}
+                </div>
+              </div>
+            </div>
+
             <h6 class="card-title">Payment References:</h6>
-            <div class="flex-row">
+            <!-- <div class="flex-row">
               <div class="p-2 float-sm-left">
                 <span class="font-weight-bold">Biller Code:</span>
               </div>
@@ -72,7 +84,29 @@
                 {{ investor?.Crn }}
               </div>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix"></div> -->
+
+            <div class="media">
+              <div class="col-sm">
+                <span class="font-weight-bold">Biller Code:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="media-body">
+                <div class="col-sm">
+                  {{ investor?.BillerCode }}
+                </div>
+              </div>
+            </div>
+
+            <div class="media">
+              <div class="col-sm">
+                <span class="font-weight-bold">Ref:</span>
+              </div>
+              <div *ngFor="let investor of investors" class="media-body">
+                <div class="col-sm">
+                  {{ investor?.Crn }}
+                </div>
+              </div>
+            </div>
             <p class="card-text">
               Telephone & Internet Banking - BPAY&#174;<br>
               Contact your bank or financial institution to make this payment from your cheque, savings, debit or transaction account. More info: <a href="http://www.bpay.com.au" target="_blank">www.bpay.com.au</a>
