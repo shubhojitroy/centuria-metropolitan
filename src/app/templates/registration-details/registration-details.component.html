@@ -24,6 +24,16 @@
               </div>-->
               <div class="media">
                 <div class="col-sm">
+                  <span class="font-weight-bold">HIN/SRN:</span>
+                </div>
+                <div *ngFor="let investor of investors" class="media-body">
+                  <div class="col-sm">
+                    {{ investor?.investorId }}
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="col-sm">
                   <span class="font-weight-bold">Holder Details:</span>
                 </div>
                 <div *ngFor="let investor of investors" class="media-body">

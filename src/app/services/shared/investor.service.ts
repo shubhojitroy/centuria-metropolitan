@@ -14,6 +14,7 @@ const INVESTORS = [
   {
     'Holder': 'BoardRoom',
     'HolderDetails': 'Lvl 12 Grosvenor Place 225 George Street Sydney 2000',
+    'investorId': 12345,
     'Address1': 'BoardRoom',
     'Address2': 'Lvl 12',
     'Address3': 'Grosvenor Place',
