@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
+
 @Component({
   selector: 'cmo-offer-overview',
   templateUrl: './offer-overview.component.html',
@@ -16,5 +18,8 @@ export class OfferOverviewComponent implements OnInit {
   onSubmit() {
     this.router.navigate(['/login']);
   }
+
+
+
 
 }
