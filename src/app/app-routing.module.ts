@@ -12,6 +12,7 @@ import { ApplicationComponent } from './templates/application/application.compon
 import { ConfirmationPaymentComponent } from './templates/confirmation-payment/confirmation-payment.component';
 import { FinishComponent } from './templates/finish/finish.component';
 
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'confirmation', component: ConfirmationComponent },

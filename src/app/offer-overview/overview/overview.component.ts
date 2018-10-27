@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class OverviewComponent implements OnInit {
 
   tabTitle = 'Overview of the Entitlement Offer';
-
   constructor() { }
 
   ngOnInit() {

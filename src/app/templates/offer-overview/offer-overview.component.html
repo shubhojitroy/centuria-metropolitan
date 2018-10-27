@@ -1,42 +1,42 @@
 <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="card-title">{{ pageTitle }}</h5>
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">{{ pageTitle }}</h5>
+        </div>
+        <div class="card-body">
+          <div>
+            <tabset>
+              <tab heading = "OVERVIEW" id="tab1" [routerLink]="['/overview']">
+                <cmo-overview></cmo-overview>
+              </tab>
+              <tab heading = "DATES" [routerLink]="['/dates']">
+                <cmo-dates></cmo-dates>
+              </tab>
+              <tab heading = "PROSPECTUS" [routerLink]="['/prospectus']">
+                <cmo-prospectus></cmo-prospectus>
+              </tab>
+              <tab heading = "CONTACT" [routerLink]="['/contact']">
+                <cmo-contact></cmo-contact>
+              </tab>
+            </tabset>
           </div>
-          <div class="card-body">
-            <div>
-              <tabset>
-                <tab heading = "OVERVIEW" id="tab1">
-                  <cmo-overview></cmo-overview>
-                </tab>
-                <tab heading = "DATES">
-                  <cmo-dates></cmo-dates>
-                </tab>
-                <tab heading = "PROSPECTUS">
-                  <cmo-prospectus></cmo-prospectus>
-                </tab>
-                <tab heading = "CONTACT">
-                  <cmo-ctcdetails></cmo-ctcdetails>
-                </tab>
-              </tabset>
+          <hr>
+          <div class="flex-row">
+            <div class="p-2 float-sm-left">
+              <button type="button" class="btn btn-primary" [routerLink]="['/']">
+                Exit <i class="fas fa-times-circle"></i>
+              </button>
             </div>
-            <hr>
-            <div class="flex-row">
-              <div class="p-2 float-sm-left">
-                <button type="button" class="btn btn-primary" [routerLink]="['/']">
-                  Exit <i class="fas fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="p-2 float-sm-right">
-                <button type="button" class="btn btn-primary" (click)="onSubmit()">
-                  Apply <i class="fas fa-award"></i>
-                </button>
-              </div>
+            <div class="p-2 float-sm-right">
+              <button type="button" class="btn btn-primary" (click)="onSubmit()">
+                Apply <i class="fas fa-award"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>

@@ -22,15 +22,13 @@ import { InvestorService} from './services/shared/investor.service';
 import { ContactComponent } from './modals/contact/contact.component';
 import { PrivacypolicyComponent } from './modals/privacypolicy/privacypolicy.component';
 
-import { OverviewComponent } from './tabs/overview/overview.component';
-import { DatesComponent } from './tabs/dates/dates.component';
-import { ProspectusComponent } from './tabs/prospectus/prospectus.component';
-import { CtcdetailsComponent } from './tabs/ctcdetails/ctcdetails.component';
+
 import { LoginComponent } from './templates/login/login.component';
 import { RegistrationDetailsComponent } from './templates/registration-details/registration-details.component';
 import { ApplicationComponent } from './templates/application/application.component';
 import { ConfirmationPaymentComponent } from './templates/confirmation-payment/confirmation-payment.component';
 import { FinishComponent } from './templates/finish/finish.component';
+import { OfferOverviewModule } from './offer-overview/offer-overview.module';
 
 @NgModule({
   declarations: [
@@ -42,10 +40,6 @@ import { FinishComponent } from './templates/finish/finish.component';
     OfferOverviewComponent,
     HeaderComponent,
     FooterComponent,
-    OverviewComponent,
-    DatesComponent,
-    ProspectusComponent,
-    CtcdetailsComponent,
     LoginComponent,
     RegistrationDetailsComponent,
     ApplicationComponent,
@@ -61,6 +55,7 @@ import { FinishComponent } from './templates/finish/finish.component';
     ReactiveFormsModule,
     TabsModule.forRoot(),
     ModalModule.forRoot(),
+    OfferOverviewModule,
   ],
   providers: [BsModalService, CountryService, InvestorService],
   bootstrap: [AppComponent]
